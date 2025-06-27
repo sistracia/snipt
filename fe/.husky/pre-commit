@@ -1,0 +1,2 @@
+cd fe
+bunx lint-staged

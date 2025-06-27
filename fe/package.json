@@ -7,21 +7,24 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "prepare": "cd .. && husky fe/.husky"
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
     "@nuxt/image": "1.10.0",
     "@nuxt/scripts": "0.11.8",
     "@nuxt/test-utils": "3.19.1",
-    "@unhead/vue": "^2.0.3",
-    "nuxt": "^3.17.5",
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1"
+    "@unhead/vue": "2.0.11",
+    "nuxt": "3.17.5",
+    "vue": "3.5.17",
+    "vue-router": "4.5.1"
   },
   "devDependencies": {
     "@biomejs/biome": "2.0.5",
-    "@unocss/nuxt": "^66.3.1",
-    "unocss": "^66.3.1"
+    "@unocss/nuxt": "66.3.1",
+    "husky": "9.1.7",
+    "lint-staged": "16.1.2",
+    "unocss": "66.3.1"
   }
 }
