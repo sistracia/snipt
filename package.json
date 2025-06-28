@@ -8,7 +8,8 @@
     "generate": "cd fe && nuxt generate",
     "preview": "cd fe && nuxt preview",
     "postinstall": "cd fe && nuxt prepare",
-    "prepare": "husky"
+    "prepare": "husky",
+    "ts:check": "cd fe && vue-tsc --noEmit"
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
@@ -25,6 +26,7 @@
     "@unocss/nuxt": "66.3.1",
     "husky": "9.1.7",
     "lint-staged": "16.1.2",
-    "unocss": "66.3.1"
+    "unocss": "66.3.1",
+    "vue-tsc": "2.2.10"
   }
 }
