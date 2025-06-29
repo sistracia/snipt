@@ -1,15 +1,15 @@
 {
-  "name": "nuxt-app",
+  "name": "fe",
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cd fe && nuxt build",
-    "dev": "cd fe && nuxt dev",
-    "generate": "cd fe && nuxt generate",
-    "preview": "cd fe && nuxt preview",
-    "postinstall": "cd fe && nuxt prepare",
-    "prepare": "husky",
-    "ts:check": "cd fe && vue-tsc --noEmit"
+    "build": "nuxt build --cwd=fe",
+    "dev": "nuxt dev --cwd=fe",
+    "generate": "nuxt generate --cwd=fe",
+    "preview": "nuxt preview --cwd=fe",
+    "postinstall": "nuxt prepare --cwd=fe",
+    "prepare": "bun run .husky/install.mjs",
+    "ts:check": "vue-tsc --project fe/tsconfig.json --noEmit"
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
