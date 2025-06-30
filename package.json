@@ -8,8 +8,8 @@
     "generate": "nuxt generate --cwd=fe",
     "preview": "nuxt preview --cwd=fe",
     "postinstall": "nuxt prepare --cwd=fe",
-    "prepare": "bun run .husky/install.mjs",
-    "ts:check": "vue-tsc --project fe/tsconfig.json --noEmit"
+    "ts:check": "vue-tsc --project fe/tsconfig.json --noEmit",
+    "prepare": "bun -e \"if (process.env.NODE_ENV === 'production' || process.env.CI === 'true') process.exit(0); console.log((await import('husky')).default());\""
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
