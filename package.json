@@ -9,7 +9,7 @@
     "preview": "nuxt preview --cwd=fe",
     "postinstall": "nuxt prepare --cwd=fe",
     "ts:check": "vue-tsc --project fe/tsconfig.json --noEmit",
-    "prepare": "bun -e \"if (process.env.NODE_ENV === 'production' || process.env.CI === 'true') process.exit(0); console.log((await import('husky')).default());\""
+    "prepare": "bun -e \"if (process.env.NODE_ENV === 'production' || process.env.CI === 'true') process.exit(0);\" || husky"
   },
   "dependencies": {
     "@nuxt/fonts": "0.11.4",
